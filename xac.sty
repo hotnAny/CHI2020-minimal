@@ -1,0 +1,82 @@
+
+
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{enumitem}
+
+%\renewcommand{\refname}{\centerline{References cited}}
+
+\newcommand{\xx}[0]
+{{\fontfamily{cmss}\selectfont \bfseries \color{red} \colorbox{yellow}{xx}}}
+
+\newcommand{\xac}[2]
+{{\color{red} #1 }{\fontfamily{cmss}\selectfont \bfseries \color{blue} $\leftarrow$ Anthony: #2 }}
+
+%\NewDocumentCommand{\codeword}{v}{%
+%\texttt{\small #1}}
+
+% label, file, width, caption, 
+\newcommand{\fgw}[4]{
+\begin{figure*}[t]
+\centering
+\includegraphics[width=#3\textwidth]{figures/#2}
+\caption{#4}
+\label{fg:#1}
+\end{figure*}
+}
+
+\newcommand{\fg}[4]{
+\begin{figure}[t]
+\centering
+\includegraphics[width=#3\columnwidth]{figures/#2}
+\caption{#4}
+\label{fg:#1}
+\end{figure}
+}
+
+\newcommand{\fgh}[4]{
+\begin{figure}[H]
+\centering
+\includegraphics[width=#3\columnwidth]{figures/#2}
+\caption{#4}
+\label{fg:#1}
+\end{figure}
+}
+
+%\newcommand{\teaser}[2]{
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=1.0\textwidth]{figures/#1}
+%\caption{#2}
+%\label{fg:teaser}
+%\end{figure}
+%}
+
+\newcommand{\fgref}[1]{Figure~\ref{fg:#1}}
+\newcommand{\tbref}[1]{Table~\ref{tb:#1}}
+\newcommand{\secref}[1]{\S\ref{sec:#1}}
+
+\newcommand{\sssec}[1]{\subsubsection{#1} \vspace{-0.5em}}
+
+\newcommand{\citeref}[1]{~[\cite{#1}]}
+
+\newcommand{\eg}{\textit{e.g.}, }
+\newcommand{\ie}{\textit{i.e.}, }
+\newcommand{\etal}{\textit{et al.}}
+
+\newcommand{\one}[0] {{\em (i)}~}
+\newcommand{\two}[0] {{\em (ii)}~}
+\newcommand{\three}[0] {{\em (iii)}~}
+\newcommand{\four}[0] {{\em (iv)}~}
+
+\newcommand{\insec}[1]
+{{\fontfamily{cmss}\selectfont \textit{#1} }}
+
+\newcommand{\sref}[1]
+{{\S}\ref{sec:#1}}
+
+\newcommand{\degree}{$^\circ$}
+
+\providecommand{\td}[1]{\todo[inline]{#1}}
+
+\renewcommand{\arraystretch}{1.5}
